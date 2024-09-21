@@ -3,9 +3,11 @@ import React from 'react';
 const Dropdown = () => {
     return (
         <ul className="dropdown">
-            <li><a href="/Pr1">Producto 1</a></li>
-            <li><a href="/Pr2">Producto 2</a></li>
-            <li><a href="/Pr3">Producto 3</a></li>
+            <li><a href="/Pr">Procesadores</a></li>
+            <li><a href="/Mo">Motherboards</a></li>
+            <li><a href="/Me">Memorias Ram</a></li>
+            <li><a href="/Pl">Placas de Video</a></li>
+            <li><a href="/Di">Discos Rigidos</a></li>
         </ul>
     );
 };

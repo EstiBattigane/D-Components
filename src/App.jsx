@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <ItemListContainer Fitems={'Futuro body'}/>
+      <ItemListContainer Fitems={'Bienvenidos a D-Components'}/>
     </div>
   );
 };
