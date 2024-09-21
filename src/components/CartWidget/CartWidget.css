@@ -1,0 +1,22 @@
+.Cart-widget {
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #e48648;
+    border-radius: 25%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(77, 72, 67, 0.651);
+    text-align: center;
+}
+
+.Cart-widget:hover {
+    background-color: #a3622d;
+}
+
+.Cart-widget img {
+    width: 40px;
+    height: 40px;
+}
