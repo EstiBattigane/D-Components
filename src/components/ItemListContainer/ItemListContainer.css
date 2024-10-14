@@ -1,4 +1,11 @@
-h2 {
-    color: white;
-    text-decoration: none;
+.item-list-container {
+    background-color: rgba(119, 98, 74, 0.315); 
+    background-position: center;
+}
+
+body {
+    margin: 0;
+    padding-top: 60px;
+    background-image: url('../Img/Fondo.jpg'); 
+    background-size: 100%;
 }

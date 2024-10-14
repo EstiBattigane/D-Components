@@ -1,9 +1,10 @@
 import './ItemListContainer.css';
+import ImageSlider from './ImageSlider.jsx';
 
-const ItemListContainer = ({ Fitems }) => {
+function ItemListContainer() {
     return (
-        <div>
-            <h2>{ Fitems } </h2>
+        <div className="item-list-container">
+            <ImageSlider />
         </div>
     );
 }

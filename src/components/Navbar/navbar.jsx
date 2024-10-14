@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import Dropdown from './Dropdown';
 import CartWidget from '../CartWidget/CartWidget';
-import logo from '../assets/logo.ico';
+import { Link } from 'react-router-dom';
+import logo from '../Img/logo.ico';
 
 const Navbar = () => {
     const [dropdown, setDropdown] = useState(false);
@@ -10,16 +11,15 @@ const Navbar = () => {
     return (
         <nav>
             <div className='Logo'>
-                <img src={logo} alt="D-Components" href="/" />
-                <h3 href='/'>D-Components</h3>
+                <Link to="/"><img src={logo} alt="D-Components" /></Link>
+                <Link to="/"><h3>D-Components</h3></Link>
             </div>
             <div>
                 <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}><a>Productos</a>
-                        {dropdown && <Dropdown />}
-                    </li>
-                    <li><a href="/Contact">Contacto</a></li>
+                    <li><Link className="navigation" to="/"><a>Inicio</a></Link></li>
+                    <li onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}><Link className="products" to="/products"><a>Productos</a>{dropdown && <Dropdown />}
+                    </Link></li>
+                    <li><Link to="/contact"><a>Contacto</a></Link></li>
                 </ul>
             </div>
             <CartWidget />

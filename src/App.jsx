@@ -1,14 +1,19 @@
 import Navbar from './components/Navbar/navbar.jsx';
+import Main from './components/main.jsx';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import './App.css'
+import { BrowserRouter } from 'react-router-dom';
 
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <ItemListContainer Fitems={'Bienvenidos a D-Components'}/>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Navbar />
+        <Main />
+        <ItemListContainer />
+      </div>
+    </BrowserRouter>
   );
 };
 
