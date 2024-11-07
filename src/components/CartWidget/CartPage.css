@@ -60,3 +60,63 @@
 .generate-ticket button:hover {
     background-color: #a3622d;
 }
+
+@media (max-width: 1920px) {
+    .cart-page li img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cart-page li button {
+        padding: 10px 20px;
+    }
+
+    .generate-ticket input[type="email"] {
+        padding: 12px;
+        margin-right: 12px;
+    }
+
+    .generate-ticket button {
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-page {
+        padding-top: 80px;
+        padding-bottom: 120px;
+    }
+
+    .cart-page li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-page li img {
+        width: 60px;
+        height: 60px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .cart-page li div {
+        width: 100%;
+    }
+
+    .cart-page li button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .generate-ticket input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .generate-ticket button {
+        width: 100%;
+        padding: 10px;
+    }
+}
