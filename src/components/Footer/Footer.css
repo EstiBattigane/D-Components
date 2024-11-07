@@ -1,9 +1,15 @@
+body {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 1rem 0;
-  width: 100vw;
+  width: 100%;
   border: none;
   position: fixed;
   bottom: 0;
@@ -36,4 +42,32 @@
   cursor: pointer;
   color: white;
   text-decoration: underline;
+}
+
+@media (max-width: 1920px) {
+  .footer {
+    padding: 1.5rem 0;
+  }
+
+  body {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+  }
+
+  .socials {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  body {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }

@@ -13,6 +13,11 @@ nav {
     align-items: center;
 }
 
+body {
+    margin: 0;
+    padding-top: 60px;
+}
+
 nav .Logo {
     position: absolute;
     left: 20px;
@@ -180,4 +185,65 @@ nav ul li:hover .dropdown {
 
 .dropdown li Link:hover {
     background-color: #a3622d;
+}
+
+@media (max-width: 1920px) {
+    nav .Logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    nav .Logo h3 {
+        font-size: 18px;
+    }
+
+    nav ul li a, nav ul li Link {
+        padding: 8px 12px;
+    }
+
+    .auth-button, .logout-button {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav .Logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    nav .Logo h3 {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    .CartAndUser {
+        flex-direction: column;
+        position: static;
+        gap: 5px;
+    }
+
+    .auth-button, .logout-button {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        margin-left: 0;
+    }
+
+    body {
+        margin-top: 60px;
+    }
 }

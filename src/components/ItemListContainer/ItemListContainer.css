@@ -1,9 +1,30 @@
 .item-list-container {
     background-color: rgba(119, 98, 74, 0.315); 
     background-position: center;
+    padding-top: 60px;
+    padding-bottom: 80px;
 }
 
 body {
     margin: 0;
-    padding-top: 60px;
+}
+
+@media (max-width: 1920px) {
+    .item-list-container {
+        padding: 10px;
+    }
+
+    body {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .item-list-container {
+        padding: 10px;
+    }
+
+    body {
+        padding-top: 60px;
+    }
 }
