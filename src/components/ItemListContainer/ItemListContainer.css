@@ -21,7 +21,8 @@ body {
 
 @media (max-width: 768px) {
     .item-list-container {
-        padding: 10px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     body {
