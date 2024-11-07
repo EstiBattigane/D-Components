@@ -36,8 +36,7 @@
     border-radius: 4px;
     cursor: pointer;
 }
-/* ---------------------------- */
-@media (max-width: 1920px) {
+@media (min-width: 1280px) and (max-width: 1920px) {
   .auth-container {
     max-width: 500px;
     padding: 30px;
@@ -57,7 +56,6 @@
     font-size: 1.2em;
   }
 }
-/* ---------------------------- */
 @media (max-width: 768px) {
   .auth-container {
     width: 90%;

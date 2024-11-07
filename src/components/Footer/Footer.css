@@ -44,7 +44,7 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 1920px) {
+@media (min-width: 1280px) and (max-width: 1920px) {
   .footer {
     padding: 1.5rem 0;
   }
