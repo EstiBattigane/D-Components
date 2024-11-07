@@ -1,31 +1,78 @@
+@import url('Variables.css');
+
 .productsContainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 16px;
+    max-width: 1200px;
 }
 
 .cardContainer {
     all: unset;
-    width: 40%;
-    margin-block: 10px;
-    border: solid 1px var(--main-color);
+    width: 300px;
+    margin: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #b85f36;
+    border-radius: 4px;
+    padding: 16px;
+    text-align: center;
+    background-color: #3b3b3bea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
 .cardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(145, 65, 0, 0.76);
+    border-radius: 8px;
+    padding: 8px;
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+.cardName {
     color: var(--white);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 .cardPrice {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
 }
 
 .cardImg {
-    width: 100%;
+    width: 80%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 8px;
     transition: all 0.5s;
-    border: solid 1px var(--main-color);
+    border: 1px solid #1a1a1a;
 }
 
 .cardImg:hover {
     filter: drop-shadow(0 0 10px var(--main-color));
+}
+
+.cardStock {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.6rem;
 }

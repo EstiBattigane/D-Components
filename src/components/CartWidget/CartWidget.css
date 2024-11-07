@@ -1,37 +1,45 @@
+.Cart-widget {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .Cart-widget img {
-    position: fixed;
-    top: 15px;
-    right: 70px;
-    padding: 10px;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
     cursor: pointer;
     background-color: #e48648;
-    border-radius: 25%;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgba(77, 72, 67, 0.651);
+    border-radius: 50%;
+    border: 2px solid rgba(77, 72, 67, 0.651);
     text-align: center;
-    width: 25px;
-    height: 25px;
+    transition: background-color 0.3 ease;
 }
 
 .Cart-widget img:hover {
     background-color: #a3622d;
 }
 
-.Cart-widget .Contador span {
-    position: fixed;
-    top: 18px;
-    right: 37px;
-    padding: 8px;
-    background-color: #e48648;
-    border-radius: 25%;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgba(77, 72, 67, 0.651);
-    text-align: center;
-    cursor: pointer;
+.Cart-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
 }
 
-.Cart-widget .Contador span:hover {
+.Contador {
+    padding: 10px 15px;
+    background-color: #e48648;
+    border-radius: 50%;
+    border: 2px solid rgba(77, 72, 67, 0.651);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contador span:hover {
     background-color: #a3622d;
 }

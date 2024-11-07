@@ -1,8 +1,7 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -16,6 +15,33 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url('/src/components/Img/Fondo.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
+  padding-top: 120px;
+}
+
+footer {
+  border: none;
+  width: 100%;
 }
 
 @keyframes logo-spin {

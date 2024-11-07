@@ -1,0 +1,39 @@
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100vw;
+  border: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.socials {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.socials a, .socials span {
+  color: white;
+  text-decoration: none;
+}
+
+.socials a:hover, .socials span:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
