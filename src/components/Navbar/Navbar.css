@@ -208,7 +208,7 @@ nav ul li:hover .dropdown {
 
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
     }
 
@@ -222,7 +222,7 @@ nav ul li:hover .dropdown {
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
     }
 
@@ -231,7 +231,7 @@ nav ul li:hover .dropdown {
     }
 
     .CartAndUser {
-        flex-direction: column;
+        flex-direction: row;
         position: static;
         gap: 5px;
     }
